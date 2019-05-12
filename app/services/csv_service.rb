@@ -4,8 +4,8 @@ class CsvService
   BASE_URL = 'http://repositorio.dados.gov.br/saude/unidades-saude/unidade-basica-saude/ubs.csv'
 
   def initialize(params)
-    @lat = params.split(',')[0]
-    @long = params.split(',')[1]
+    @lat = get_params(params)[0]
+    @long = get_params(params)[1]
   end
 
   def process
@@ -46,4 +46,7 @@ class CsvService
       CSV.parse(RestClient.get(BASE_URL).body.force_encoding("UTF-8"), :headers => true)
   end
 
+  def get_params(params)
+    params.split(',')
+  end
 end
