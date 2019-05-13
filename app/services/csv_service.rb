@@ -41,6 +41,7 @@ class CsvService
   end
 
   def create_ubs(ubs, row)
+    ubs.id = row['cod_cnes']
     ubs.name = row['nom_estab']
     ubs.address = row['dsc_endereco']
     ubs.city = row['dsc_cidade']

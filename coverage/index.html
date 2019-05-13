@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-13T11:04:43-03:00">2019-05-13T11:04:43-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-13T12:24:44-03:00">2019-05-13T12:24:44-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.92%</span></span>
+    (<span class="covered_percent"><span class="green">98.94%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1622.85
+         1605.65
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>8</b> files in total.
-    <b>93</b> relevant lines. 
-    <span class="green"><b>92</b> lines covered</span> and
+    <b>94</b> relevant lines. 
+    <span class="green"><b>93</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -112,12 +112,12 @@
       
       <tr>
         <td class="strong"><a href="#bc51693bb4ba73665a9043e302242bf5d2c4738c" class="src_link" title="app/services/csv_service.rb">app/services/csv_service.rb</a></td>
-        <td class="green strong">97.06 %</td>
-        <td>59</td>
+        <td class="green strong">97.14 %</td>
+        <td>60</td>
+        <td>35</td>
         <td>34</td>
-        <td>33</td>
         <td>1</td>
-        <td>4436.6</td>
+        <td>4310.0</td>
       </tr>
       
       <tr>
@@ -551,10 +551,10 @@
         <div class="source_table" id="bc51693bb4ba73665a9043e302242bf5d2c4738c">
   <div class="header">
     <h3>app/services/csv_service.rb</h3>
-    <h4><span class="green">97.06 %</span> covered</h4>
+    <h4><span class="green">97.14 %</span> covered</h4>
     <div>
-      <b>34</b> relevant lines. 
-      <span class="green"><b>33</b> lines covered</span> and
+      <b>35</b> relevant lines. 
+      <span class="green"><b>34</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -823,94 +823,100 @@
         <li class="covered" data-hits="3" data-linenumber="44">
           <span class="hits">3</span>
           
-          <code class="ruby">    ubs.name = row[&#39;nom_estab&#39;]</code>
+          <code class="ruby">    ubs.id = row[&#39;cod_cnes&#39;]</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="45">
           <span class="hits">3</span>
           
-          <code class="ruby">    ubs.address = row[&#39;dsc_endereco&#39;]</code>
+          <code class="ruby">    ubs.name = row[&#39;nom_estab&#39;]</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="46">
           <span class="hits">3</span>
           
-          <code class="ruby">    ubs.city = row[&#39;dsc_cidade&#39;]</code>
+          <code class="ruby">    ubs.address = row[&#39;dsc_endereco&#39;]</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="47">
           <span class="hits">3</span>
           
-          <code class="ruby">    ubs.phone = row[&#39;dsc_telefone&#39;]</code>
+          <code class="ruby">    ubs.city = row[&#39;dsc_cidade&#39;]</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="48">
           <span class="hits">3</span>
           
+          <code class="ruby">    ubs.phone = row[&#39;dsc_telefone&#39;]</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="49">
+          <span class="hits">3</span>
+          
           <code class="ruby">    ubs.geocode_attributes = { lat: row[&#39;vlr_latitude&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
+        <li class="never" data-hits="" data-linenumber="50">
           
           
           <code class="ruby">                               long: row[&#39;vlr_longitude&#39;] }</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="50">
+        <li class="covered" data-hits="3" data-linenumber="51">
           <span class="hits">3</span>
           
           <code class="ruby">    ubs.score_attributes = { size: row[&#39;dsc_estrut_fisic_ambiencia&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby">                             adaptation_for_seniors: row[&#39;dsc_adap_defic_fisic_idosos&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby">                             medical_equipament: row[&#39;dsc_equipamentos&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="54">
           
           
           <code class="ruby">                             medicine: row[&#39;dsc_medicamentos&#39;] }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="55">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
           <code class="ruby">  def filter_params(params)</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="57">
+        <li class="covered" data-hits="8" data-linenumber="58">
           <span class="hits">8</span>
           
           <code class="ruby">    params.split(&#39;,&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby">end</code>
@@ -974,7 +980,7 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;GET api/v1/find_ubs&#39; do</code>
+          <code class="ruby">  describe &quot;GET #{UBS_ENDPOINT}&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="8">
@@ -1052,7 +1058,7 @@
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;GET api/v1/find_ubs&#39; do</code>
+          <code class="ruby">  describe &quot;GET #{UBS_ENDPOINT}&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
@@ -1118,7 +1124,7 @@
         <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;GET api/v1/find_ubs&#39; do</code>
+          <code class="ruby">  describe &#39;GET invalid geolocate UBS&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="32">
