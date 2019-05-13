@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-12T21:43:07-03:00">2019-05-12T21:43:07-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-05-13T00:01:40-03:00">2019-05-13T00:01:40-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -53,7 +53,7 @@
       <tr>
         <td class="strong"><a href="#c45010e88d92be9a9acb56e2f6e2b37d98388819" class="src_link" title="app/controllers/api/v1/health_units_controller.rb">app/controllers/api/v1/health_units_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>18</td>
+        <td>19</td>
         <td>11</td>
         <td>11</td>
         <td>0</td>
@@ -123,7 +123,7 @@
       <tr>
         <td class="strong"><a href="#cba2f6048980d51ae07897bbdf2b6cdc988e7818" class="src_link" title="spec/request/health_units_controller_spec.rb">spec/request/health_units_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>68</td>
+        <td>44</td>
         <td>28</td>
         <td>28</td>
         <td>0</td>
@@ -193,76 +193,82 @@
         <li class="covered" data-hits="4" data-linenumber="6">
           <span class="hits">4</span>
           
+          <code class="ruby">    HealthUnit.page(params[:page]).per(params[:per_page])</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="7">
+          <span class="hits">4</span>
+          
           <code class="ruby">    if @ubs.nil?</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">      render json: { status: &#39;UBS not found&#39; }</code>
+          <code class="ruby">      render json: { error: &#39;UBS not found&#39; }, status: :not_found</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="9">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    HealthUnit.page(params[:page]).per(params[:per_page])</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">  def get_params</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="15">
+        <li class="covered" data-hits="4" data-linenumber="16">
           <span class="hits">4</span>
           
           <code class="ruby">    @pagination_page = params[:page]</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="16">
+        <li class="covered" data-hits="4" data-linenumber="17">
           <span class="hits">4</span>
           
           <code class="ruby">    @pagination_per_page = params[:per_page]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>
@@ -959,391 +965,247 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
           
-          <code class="ruby">  let(:valid_ubs) do</code>
+          <code class="ruby">  let(:valid_ubs) {create(:health_unit)}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">    {</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">        &quot;current_page&quot;: &quot;1&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">        &quot;per_page&quot;: &quot;1&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
-          
-          
-          <code class="ruby">        &quot;total_entries&quot;: 1,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">        &quot;entries&quot;: [</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">            {</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">                &quot;id&quot;: 1,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">                &quot;name&quot;: &quot;CRUZEIRO DO SUL&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">                &quot;address&quot;: &quot;R OUVIDOR BUSTAMANT&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">                &quot;city&quot;: &quot;Lavras&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">                &quot;phone&quot;: &quot;353694413&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby">                &quot;geocode&quot;: {</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">                    &quot;lat&quot;: -21.2585234642023,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">                    &quot;long&quot;: -45.003476142882</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">                },</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">                &quot;scores&quot;: {</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">                    &quot;size&quot;: 1,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">                    &quot;adaptation_for_senior&quot;: 1,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">                    &quot;medical_equipament&quot;: 1,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">                    &quot;medicine&quot;: 2</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby">                }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">            }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">        ]</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  describe &#39;GET api/v1/find_ubs&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;will retrieve response code 200&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">      get &#39;/api/v1/find_ubs?query=-21.2585234642023,-45.003476142882&amp;page=1&amp;per_page=1&#39;, params: {format: :json}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to have_http_status(200)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">  it &#39;will return all ubs with the given geolocation&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
           <code class="ruby">    get &#39;/api/v1/find_ubs?query=-21.2585234642023,-45.003476142882&amp;page=1&amp;per_page=1&#39;, params: {format: :json}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">    response_ubs = response_body</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="41">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">    expect(response_ubs[&#39;entries&#39;].count).to eq(1)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">  describe &#39;GET api/v1/find_ubs&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;will retrieve correct ubs &#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
           <code class="ruby">      get &#39;/api/v1/find_ubs?query=-21.2585234642023,-45.003476142882&amp;page=1&amp;per_page=1&#39;, params: {format: :json}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
+        <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
           <code class="ruby">      response_ubs = response_body</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response_ubs[&#39;entries&#39;].first[&#39;name&#39;]).to eq valid_ubs[:entries].first[:name]</code>
+          <code class="ruby">      expect(response_ubs[&#39;entries&#39;].first[&#39;name&#39;]).to eq valid_ubs[:name]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
+        <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response_ubs[&#39;entries&#39;].first[&#39;address&#39;]).to eq valid_ubs[:entries].first[:address]</code>
+          <code class="ruby">      expect(response_ubs[&#39;entries&#39;].first[&#39;address&#39;]).to eq valid_ubs[:address]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="50">
+        <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response_ubs[&#39;entries&#39;].first[&#39;city&#39;]).to eq valid_ubs[:entries].first[:city]</code>
+          <code class="ruby">      expect(response_ubs[&#39;entries&#39;].first[&#39;city&#39;]).to eq valid_ubs[:city]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response_ubs[&#39;entries&#39;].first[&#39;phone&#39;]).to eq valid_ubs[:entries].first[:phone]</code>
+          <code class="ruby">      expect(response_ubs[&#39;entries&#39;].first[&#39;phone&#39;]).to eq valid_ubs[:phone]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="55">
+        <li class="covered" data-hits="1" data-linenumber="30">
           <span class="hits">1</span>
           
           <code class="ruby">  describe &#39;GET api/v1/find_ubs&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;will return that ubs was not found &#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="57">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">      get &#39;/api/v1/find_ubs?query=-21.2585234121212,-45.003476142882&amp;page=1&amp;per_page=1&#39;, params: {format: :json}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="58">
+        <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
           <code class="ruby">      response_ubs = response_body</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="59">
+        <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response_ubs[&#39;status&#39;]).to eq (&#39;UBS not found&#39;)</code>
+          <code class="ruby">      expect(response_ubs[&#39;error&#39;]).to eq (&#39;UBS not found&#39;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to have_http_status(404)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="61">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
+        <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="65">
+        <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
           <code class="ruby">  def response_body</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="66">
+        <li class="covered" data-hits="3" data-linenumber="42">
           <span class="hits">3</span>
           
           <code class="ruby">    JSON.parse(response.body)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="68">
+        <li class="never" data-hits="" data-linenumber="44">
           
           
           <code class="ruby">end</code>

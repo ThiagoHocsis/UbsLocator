@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :health_unit do
-    name {'UBS Lavras'}
-    address {Faker::Address.street_name}
-    city {Faker::Address.city}
-    phone {'35 - 99911-9210'}
+    name {'CRUZEIRO DO SUL'}
+    address {'R OUVIDOR BUSTAMANT'}
+    city {'Lavras'}
+    phone {'353694413'}
   end
 end

@@ -6,8 +6,8 @@ describe HealthUnit do
     expect(ubs).to be_valid
   end
 
-  it 'name must be UBS Lavras' do
-    expect(ubs.name).to eq('UBS Lavras')
+  it 'UBS name must be CRUZEIRO DO SUL' do
+    expect(ubs.name).to eq('CRUZEIRO DO SUL')
   end
 
 end
