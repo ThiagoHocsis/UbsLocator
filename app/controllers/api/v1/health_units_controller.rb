@@ -3,6 +3,9 @@ class Api::V1::HealthUnitsController < ApplicationController
 
   def index
     @ubs = CsvService.new(params[:query]).process
+    if @ubs.nil?
+      render json: { status: 'UBS not found' }
+    end
     HealthUnit.page(params[:page]).per(params[:per_page])
   end
 

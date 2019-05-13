@@ -28,8 +28,12 @@ gem 'kaminari'
 gem 'rest-client'
 gem 'jbuilder', '~> 2.5'
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'factory_bot_rails'
+  gem 'faker', git: 'https://github.com/stympy/faker.git', branch: 'master'
+  gem 'rspec-rails', '3.8'
+  gem 'rubocop', require: false
+  gem 'simplecov', require: false, group: :test
 end
 
 group :development do

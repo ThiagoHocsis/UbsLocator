@@ -1,7 +1,7 @@
 class CsvService
   require 'csv'
   require 'rest-client'
-  BASE_URL = 'http://repositorio.dados.gov.br/saude/unidades-saude/unidade-basica-saude/ubs.csv'
+  BASE_URL = 'http://repositorio.dados.gov.br/saude/unidades-saude/unidade-basica-saude/ubs.csv'.freeze
 
   def initialize(params)
     @lat = get_params(params)[0]
@@ -39,7 +39,7 @@ class CsvService
         ubs_found << ubs
       end
     end
-    ubs_found
+    ubs_found.empty? ? nil : ubs_found
   end
 
   def csv
