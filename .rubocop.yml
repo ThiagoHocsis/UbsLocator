@@ -18,6 +18,7 @@ AllCops:
     - '**/Gemfile'
     - '**/config.ru'
   Exclude:
+    - 'app/javascript/**/*'
     - 'bin/**/*'
     - 'vendor/**/*'
     - 'db/**/*'
