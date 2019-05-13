@@ -1,6 +1,6 @@
 # UbsLocator
 
-API utilizada para encontrar dada a latitude e a longitude uma Unidade de Saúde Básica (UBS) e suas informções.
+API utilizada para encontrar dada a latitude e a longitude uma Unidade de Saúde Básica (UBS) e suas informações.
 
 ## Como baixar o projeto
 
