@@ -28,7 +28,7 @@ A aplicação está em produção na URL https://ubslocator.herokuapp.com
 
 ## Outras informações
 
-* Ferramenta utilizada para realização dos requests na API - POSTMAN, disponivel para downlaod em
+* Ferramenta utilizada para realização dos requests na API - POSTMAN, disponivel para download em
 https://www.getpostman.com/
 
 * Como rodar o linter de code smells - Acesso o projeto pelo terminal e digite ```rubocop```
