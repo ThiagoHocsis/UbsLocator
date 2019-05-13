@@ -10,6 +10,8 @@ gem 'kaminari'
 gem 'puma', '~> 3.0'
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 gem 'rest-client'
+gem 'webpacker'
+gem 'react_on_rails', '11.1.4'
 
 group :development, :test do
   gem 'byebug', platform: :mri
