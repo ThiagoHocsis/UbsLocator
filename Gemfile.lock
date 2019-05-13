@@ -96,6 +96,7 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
+    libv8 (7.3.492.27.1)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -110,6 +111,8 @@ GEM
     mime-types-data (3.2018.0812)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
+    mini_racer (0.2.5)
+      libv8 (>= 6.9.411)
     minitest (5.11.3)
     multi_json (1.13.1)
     netrc (0.11.0)
@@ -126,6 +129,9 @@ GEM
     public_suffix (3.0.3)
     puma (3.12.1)
     rack (2.0.7)
+    rack-attack (6.0.0)
+      rack (>= 1.0, < 3)
+    rack-cors (1.0.3)
     rack-proxy (0.6.5)
       rack
     rack-test (0.6.3)
@@ -251,8 +257,11 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   kaminari
   listen (~> 3.0.5)
+  mini_racer
   pg
   puma (~> 3.0)
+  rack-attack
+  rack-cors
   rails (~> 5.0.7, >= 5.0.7.2)
   react_on_rails (= 11.1.4)
   rest-client

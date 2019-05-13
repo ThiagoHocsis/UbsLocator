@@ -9,9 +9,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'kaminari'
 gem 'puma', '~> 3.0'
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
+gem 'rack-attack'
+gem 'rack-cors'
+gem 'react_on_rails', '11.1.4'
 gem 'rest-client'
 gem 'webpacker'
-gem 'react_on_rails', '11.1.4'
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -35,3 +37,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 ruby '2.4.1'
+
+gem 'mini_racer', platforms: :ruby
